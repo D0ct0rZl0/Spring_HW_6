@@ -12,9 +12,7 @@ public class ResultCalculation {
                 this.result = String.valueOf(Double.valueOf(calc.getOldNumber()) + Double.valueOf(calc.getNewNumber()));
                 break;
             case "/":
-                this.result = Double.valueOf(calc.getNewNumber()) == 0
-                        ? "Деление на ноль - бесконечность" :
-                        String.valueOf(Double.valueOf(calc.getOldNumber()) / Double.valueOf(calc.getNewNumber()));
+                this.result = String.valueOf(Double.valueOf(calc.getOldNumber()) / Double.valueOf(calc.getNewNumber()));
                 break;
             case "*":
                 this.result = String.valueOf(Double.valueOf(calc.getOldNumber())*Double.valueOf(calc.getNewNumber()));
